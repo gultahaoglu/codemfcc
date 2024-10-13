@@ -28,9 +28,9 @@ def initParams():
 
     # Data folder prepare
     parser.add_argument("-a", "--access_type", type=str, help="LA or PA", default='LA')
-    parser.add_argument("-f", "--path_to_features", type=str, help="features path",default='E:\\POST\\DeepFakeAudio\\DATASETLER\\ASV2019\\LA\\featuresMFCC')
-    parser.add_argument("-p", "--path_to_protocol", type=str, help="protocol path",default='E:\POST\DeepFakeAudio\DATASETLER\ASV2019\LA\ASVspoof2019_LA_cm_protocols')
-    parser.add_argument("-o", "--out_fold", type=str, help="output folder", required=False, default='models_4x32')
+    parser.add_argument("-f", "--path_to_features", type=str, help="features path",default='featuresMFCC')
+    parser.add_argument("-p", "--path_to_protocol", type=str, help="protocol path",default='\LA\ASVspoof2019_LA_cm_protocols')
+    parser.add_argument("-o", "--out_fold", type=str, help="output folder", required=False, default='models_SE_SON_16X8')
 
     # Dataset prepare
     parser.add_argument("--feat_len", type=int, help="features length", default=750)
